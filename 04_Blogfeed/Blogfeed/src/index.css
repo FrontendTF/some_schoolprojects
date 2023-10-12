@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.H3 {
+  @apply text-2xl font-bold text-blue-600;
+}
+
+.bluebutton {
+  @apply bg-blue-500 text-white w-40 py-1 text-center font-bold;
+}
+.blogcard {
+  @apply flex flex-col gap-2;
+}
+.H2 {
+  @apply text-4xl font-bold;
+}
+.inputstyle {
+  @apply flex w-11/12 md:w-1/2 outline-none text-center bg-slate-300 p-1 border-2 hover:border-black;
+}
