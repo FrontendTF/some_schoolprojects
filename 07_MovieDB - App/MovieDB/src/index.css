@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.H2 {
+  @apply text-2xl;
+}
+.H3 {
+  @apply text-xl font-semibold;
+}
+.btags b {
+  @apply mr-5 sm:mr-20;
+}
+.btags p {
+  @apply py-3 border-b-2;
+}
