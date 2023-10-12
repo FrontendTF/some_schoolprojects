@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.inputstyle {
+  @apply bg-gray-200 p-3 flex w-11/12;
+}
+.bluebutton {
+  @apply bg-blue-400 p-3 uppercase font-bold text-white w-11/12;
+}
