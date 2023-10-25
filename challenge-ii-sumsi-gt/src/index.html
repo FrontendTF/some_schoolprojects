@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Sumsi Malwettbewerb 2022, du kannst malen? Dann mach einfach mit und gewinne tolle Preise." />
+  <meta name="author" content="Raiffeisen Bank Kärnten" />
+  <title>Sumsi Malwettbewerb</title>
+  <link rel="stylesheet" href="/dist/output.css" />
+  <link rel="shortcut icon" href="/assets/Logo/Raiffeisen Logo Gelb.png" type="image/x-icon" />
+</head>
+
+<body class="bg-bg_white">
+  <header class="bg-white w-full" id="navigation-header">
+    <div class="flex justify-between w-[90%] ml-[5%] mr-[5%] p-3 items-center gap-3">
+      <div>
+        <img class="w-52 xs:w-64 sm:w-80 md:w-[450px] md:h-auto lg:w-[550px]" src="/assets/Logo/RLB_Logo_4c_NEW.png" alt="Logo Raiffeisen Bank Kärnten"
+          title="Logo Raiffeisen Landesbank Kaernten" />
+      </div>
+
+      <div class="flex gap-3">
+        <div class="hidden md:flex gap-3">
+          <a class="underlinehover color-change-text" href="#navigation-welcome" data-content="">Willkommen</a>
+          <a class="underlinehover color-change-text" href="#navigation-gallery" data-content="">Galerie</a>
+          <a class="underlinehover color-change-text" href="#navigation-participate" data-content="">Teilnahme</a>
+          <a class="underlinehover color-change-text" href="#navigation-contact" data-content="">Kontakt</a>
+        </div>
+
+          <button
+            id="openModal1"
+            class="md:mr-0 underlinehover color-change-text"
+            data-content="Sprache"
+          >
+            Sprache
+          </button>
+        
+          <div id="modal1" class="fixed z-10 inset-0 overflow-y-auto hidden">
+            <div class="flex items-center justify-center min-h-screen px-4 text-center">
+              <div class="fixed inset-0 bg-black opacity-50"></div>
+              <div
+                class="z-20 max-w-xl mx-auto bg-white rounded-lg text-center overflow-hidden shadow-2xl transform transition-transform sm:w-full">
+                <div class="px-4 py-2 flex justify-center">
+                  <div id="google_translate_element"></div>
+                </div>
+                <div class="px-4 py-2">
+                  <button id="closeModal1" class="px-2 py-1 text-black underlinehover">
+                    Sprachauswahl SCHLIEßEN
+                  </button>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="menu-btn md:hidden items-end">
+          <div class="menu-btn__burger"></div>
+        </div>
+      </div>
+
+      
+    </div>
+    <ul id="nav-links" class="hidden md:hidden text-center">
+      <li><a href="#navigation-welcome" class="text-2xl bubble-button">Willkommen</a></li>
+      <li><a href="#navigation-participate" class="text-2xl bubble-button">Teilnahme</a></li>
+      <li><a href="#navigation-gallery" class="text-2xl bubble-button">Galerie</a></li>
+      <li><a href="#navigation-contact" class="text-2xl bubble-button">Kontakt</a></li>
+    </ul>
+
+  </header>
+  <!--#########-->
+
+  <!--hero section-->
+  <section class="bg-hero-image h-[70vh] md:h-[80vh] bg-no-repeat bg-cover bg-center relative">
+    <div class="w-[60%] m-auto sm:w-full h-full flex justify-center">
+      <div class="mt-[10vh] md:mt-[20vh] font-bold">
+        <h1 class="bg-yellow text-black inline-flex">Willkommen beim</h1>
+        <h1 class="bg-black text-white">Sumsi Malwettbewerb!</h1>
+      </div>
+    </div>
+    <img class="absolute bottom-8 sm:bottom-28 md:bottom-8 left-10 xs:left-12 md:left-28 w-2/5 sm:w-1/4"
+      src="../assets/sumsi_images/malen.png" alt="malende Sumsi" />
+    <img class="hidden md:flex absolute bottom-14 right-40 lg:bottom-8 w-1/5" src="../assets/sumsi_images/erfreut.png"
+      alt="erfreute Sumsi" />
+  </section>
+  <!--##########-->
+
+  <!--main section-->
+  <main>
+
+    <a class="fixed bottom-2 right-8 sm:bottom-4 sm:right-16 border p-1 z-20 bg-white hover:bg-yellow shadow-lg"
+      href="#navigation-header">Zurück nach oben</a>
+
+    <!--Einleitung und Erklärung-->
+    <section class="lg:container mt-20" id="navigation-welcome">
+      <div class="flex gap-2 flex-col sm:w-[80%] m-auto shadow-xl p-6">
+        <h2 class="mb-4 font-bold">Liebe Kinder, liebe Eltern,</h2>
+        <p>
+          wie jedes Jahr gibt es bei uns auch heuer einen
+          Kinder-Malwettbewerb. Jedes Kind, das vom 29. bis 31. Oktober eine
+          Zeichnung mitbringt, bekommt eine Gratis-Karte* für die
+          Sumsi-Kinopremiere von „Eiskönigin 2“ in 3D am 24. November 2019 um
+          10.00 Uhr in der CineCity Klagenfurt.
+        </p>
+        <span class="font-bold">Das Thema heißt: Sumsi sucht Dein außergewöhnlichstes
+          Erlebnis.</span>
+        <p>
+          Zeichnet einfach Dinge, die für Euch außergewöhnlich lustig,
+          spannend oder schön waren. Aber vergesst nicht, eure Namen und euer
+          Alter auf der Zeichnung zu vermerken, denn bei der
+          Sumsi-Kinopremiere verlosen wir tolle Preise. Ich freue mich auf
+          Eure Zeichnungen!
+        </p>
+        <span class="font-bold">Eure Raiffeisen-Sumsi</span>
+      </div>
+
+      <div class="mt-20 mb-8 flex items-center flex-col font-bold">
+        <h2 id="#Teilnahme" class="bg-yellow text-black p-2">Mitmachen ist ganz einfach.</h2>
+        <h2 class="bg-black text-white p-2 inline-flex">
+          So funktioniert's!
+        </h2>
+      </div>
+
+      <div class="flex flex-col gap-6 md:w-[80%] m-auto">
+        <div class="bg-green reverse-class shadow-xl">
+          <div class="card-container">
+            <div class="card">
+              <span>1.Schritt</span>
+              <h3>Zeichnen</h3>
+              <p>
+                Das Thema des heurigen Wettbewerbes: zeichne oder male, was
+                Dein größter Wunsch für das nächste Jahr ist. Was möchtest Du
+                gern erleben, sehen, unternehmen, was ist Dein sehnlichster
+                Traum?
+              </p>
+            </div>
+
+            <div class="card-img-container">
+              <img src="../assets/sumsi_images/malen.png" alt="malende Sumsi" />
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-red reverse-class shadow-xl">
+          <div class="card-container">
+            <div class="card">
+              <span>2.Schritt</span>
+              <h3>Digitalisieren</h3>
+              <p>
+                Das Kunstwerk bitte scannen oder fotografieren und bis
+                spätestens 5. November 2021 mittels nachstehendem
+                Kontaktformular hochladen und einreichen.
+              </p>
+            </div>
+            <div class="card-img-container">
+              <img src="../assets/sumsi_images/smartphone_nobg.png" alt="Sumsi mit Smartphone" />
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-blue reverse-class shadow-xl">
+          <div class="card-container">
+            <div class="card">
+              <span>3.Schritt</span>
+              <h3>Ausstellen</h3>
+              <p>
+                In der großen Sumsi Galerie werden dann alle Kunstwerke online
+                ausgestellt. Deine Freunde, Familie, Großeltern und Nachbarn
+                können dort deine Zeichnung bewundern.
+              </p>
+            </div>
+            <div class="card-img-container">
+              <img src="../assets/sumsi_images/laptop_nobg.png" alt="Sumsi mit Laptop" />
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-orange reverse-class shadow-xl">
+          <div class="card-container">
+            <div class="card">
+              <span>4.Schritt</span>
+              <h3>Gewinnen</h3>
+              <p>
+                Jede Zeichnung ist Großartig! Aus allen eingreichten
+                Kunstwerken werden 10 Zeichnungen gezogen. Auf diese 10 warten
+                tolle Preise!
+              </p>
+            </div>
+            <div class="card-img-container">
+              <img src="../assets/sumsi_images/jubeln_nobg.png" alt="jubelde Sumsi" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Galery-->
+    <section id="navigation-gallery">
+      <div class="flex flex-col items-center mt-20 mb-8">
+        <h2 class="bg-yellow p-2 font-bold">Die Summsi Galerie</h2>
+        <h2 class="bg-black text-white p-1">2023</h2>
+      </div>
+
+      <!-- input for voting email -->
+      <div class="flex flex-col items-center mb-8 gap-8 sm:w-[80%] m-auto p-6">
+        <div class="text-center bg-white shadow-xl p-6">
+          <p>Um für Bilder abstimmen zu können, gib einfach deine E-Mail-Adresse an und schon kannst du loslegen!</p>
+          <p><b>Zu beachten:</b> Pro Mail-Adresse können maximal fünf Stimmen abgegeben werden, wobei pro Bild nur
+            einmal abgestimmt werden darf. </p>
+        </div>
+        
+        <form id="mail-form" class="flex justify-between md:w-1/2 shadow-xl">
+          <input type="email" id="vote-email" name="vote-email" class="w-full p-3" placeholder="E-Mail-Adresse"
+            required>
+          <button id="send-vote-mail"
+            class="bg-yellow p-3 transition-colors hover:bg-black hover:text-white">Absenden</button>
+        </form>
+        <div id="mail-input-info"></div>
+      </div>
+
+      <div class="lg:container ">
+        <div class="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 p-2 sm:p-4 w-full h-full"
+          id="gallery-container"></div>
+      </div>
+      <!-- img-gallery popup -->
+      <article class="fixed top-0 left-0 h-full w-full bg-black_70 hidden z-40" id="gallery-popup">
+        <div class="w-screen h-screen flex justify-center items-center">
+          <span class="absolute top-4 right-8 p-2  bg-black text-white cursor-pointer" id="close-btn">Schließen</span>
+          <div class="w-[90%] h-[75%] sm:w-[80%] m-auto flex justify-center items-center flex-col gap-2">
+            <div class="h-full w-full border-[6px] border-white bg-black p-2">
+              <img id="description-img" class="h-full w-full object-contain"
+                src="../assets/stock_images/froehlicher kleiner junge.jpg" alt="" />
+            </div>
+            <div
+              class="bg-white w-[80%] flex flex-col lg:flex-row justify-between items-center gap-2 p-4 border-[6px] ">
+              <div class="border-x p-2 shadow-lg">
+                <span id="description-name"></span>
+                <span id="description-age"></span>
+              </div>
+              <div class="flex flex-col gap-2 md:flex-row">
+                <span class="border-x p-2 shadow-lg" id="description-votings">Stimmen</span>
+                <button class="border shadow-lg p-1 hidden hover:bg-yellow" id="vote-btn">Für dieses Bild
+                  abstimmen</button>
+              </div>
+            </div>
+            <div class="text-center hidden p-1 text-white" id="user-feedback"></div>
+            <div class="text-center hidden p-1 text-white" id="user-feedback-count"></div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!--Form und Info-->
+    <section class="my-20">
+      <div class="flex flex-col justify-center items-center text-center my-5      bg-yellow xs:bg-bg_white">
+        <h3 class="p-5 bg-yellow font-bold">Das wird der beste Malwettbewerb aller Zeiten</h3>
+
+<div class="flip-card w-50 sm:w-72 md:w-80 lg:w-96">
+  <div class="flip-card-inner h-50 sm:h-72 md:h-80 lg:h-96">
+    <div class="flip-card-front">
+      <img src="/assets/sumsi_images/briefe.png" alt="sumsi_image">
+    </div>
+    <div class="flip-card-back">
+      <img src="/assets/sumsi_images/erfreut.png" alt="sumsi_image_backside">
+    </div>
+  </div>
+</div>
+<p class="sm:text-l md:text-xl bg-yellow w-2/3">Bis zum 5. November 2021 gibt es die Möglichkeit, Zeichnungen und Bilder in der Sumsi Galerie auszustellen. Einfach im nachstehendem Konktaktformular hochladen und mitmachen!</p>
+</div>
+
+      <!--Kontaktformular #Text -->
+      <div class="flex flex-col md:flex-row w-[90%] m-auto my-20 gap-10 lg:gap-20">
+
+        <div class="flex flex-col gap-3 md:w-1/2">
+          <div class="flex flex-col font-extrabold text-xl sm:text-2xl lg:text-3xl">
+            <span class="p-3 bg-yellow text-black">Sumsi Malwettbewerb.</span>
+            <span class="p-3 bg-black text-white">Mach mit & gewinne!</span>
+          </div>
+          <div class="bg-yellow">
+            <ul class="list-disc list-inside space-y-2 p-4">
+              <li class="font-bold">Zeichnen und Malen</li>
+              <li><b>Digitalisieren</b>(Foto oder Scan)</li>
+              <li class="font-bold">hochladen und einreichen bis 5. November 2021.</li>
+              <li>Die <b> Ausstellung </b>in der Sumsi-Galerie läuft ab 20.Oktober 2021.</li>
+              <li>Mit Glück einen der <b> 10 tollen Preise gewinnen</b>.</li>
+              <li class="font-bold">Die Eltern werden per Mail verständigt.</li>
+              <li class="font-bold">Der Rechtsweg ist ausgeschlossen.</li>
+            </ul>
+            <p class="pl-10">Ich freue mich auf viele bunte Zeichnungen. Macht mit und schickt mir eure Träume!</p>
+            <p class="font-bold pl-10">Eure Raiffeisen Sumsi</p>
+          </div>
+        </div>
+        <!--Kontaktformular Daten-->
+        <div class="flex flex-col border-4 border-yellow bg-gray text-white md:w-1/2 gap-5 p-5" id="navigation-participate">
+          <h3 class="text-center border-b-2 border-yellow">Kontaktformular zum Bilder-Hochladen</h3>
+          <p class="text-center">Bitte hier alle pflichtfelder ausfüllen, den einzelnen Bedingungen zustimmen und das
+            Bild hochladen !<br>
+          Wichtig: Pro E-Mail Adresse kann nur ein Bild hochgeladen werden !</p>
+          <!--inputfelder-->
+          <form class="flex gap-3 flex-col" id="meinFormular" method="post" enctype="multipart/form-data">
+            
+
+            <input class="forminput" id="legalguardian_firstname" type="text" placeholder="Vorname Erziehungsberichtigte/r *"
+              required>
+            <input class="forminput" id="legalguardian_lastname" type="text" placeholder="Nachname Erziehungsberichtigte/r *"
+              required>
+
+
+            <input class="forminput" id="email" type="email" placeholder="E-Mail Adresse zum Verständigen *" required>
+            <input class="forminput" id="child_firstname" type="text" placeholder="Vorname Kind *" required>
+            <input class="forminput" type="number" name="" id="child_age"
+              placeholder="Geben sie das Alter des Kindes ein * (max. 16 Jahre)" required max="16" min="0">
+            <div class="bg-er_red text-white  p-2 hidden" id="ageControl">
+              <p>Das Maximale Alter von 16 Jahren wurde überschritten !</p>
+            </div>
+
+            <!--fileupload-->
+            <div id="drop-area" class=" p-4 flex flex-col">
+              <label for="file-upload">Bild hochladen:</label>
+              <input type="file" id="file-upload" name="file-upload">
+              <p id="file-name"></p>
+            </div>
+
+<!--checkboxen-->
+<label class="flex items-center" id="checkbox-label1">
+  <input type="checkbox" id="approval_privacypolicy" class="form-checkbox text-red rounded shadow mr-2" aria-labelledby="checkbox-label1" required>
+  <span>Zustimmung Urheberrechte *</span>
+</label>
+<label class="flex items-center" id="checkbox-label2">
+  <input type="checkbox" id="approval_participation" class="form-checkbox text-red rounded shadow mr-2" aria-labelledby="checkbox-label2" required>
+  <span>Zustimmung Teilnahme Ausstellung *</span>
+</label>
+<label class="flex items-center" id="checkbox-label3">
+  <input type="checkbox" id="approval_mailnotification" class="form-checkbox text-red rounded shadow mr-2" aria-labelledby="checkbox-label3" required>
+  <span>Zustimmung Verständigung per Mail *</span>
+</label>
+<br>
+<p>*Pflichtfelder</p>
+<!--submitbutton-->
+  <div class="flex justify-center">
+<button id="modalSubmitButton" class="bg-yellow w-1/2 text-center buttonhover bubble-button mt-2" type="button">Absenden</button>
+  </div>
+</form>
+
+<!--Meldung wenn code 200-->
+<div id="sucessfull" class="p-2 font-bold text-center rounded-md hidden bg-lightgray text-black border-4 border-yellow underline"><p>Herzlichen Glückwunsch, deine Daten wurden erfolgreich übermittelt</p>
+  <button class="bg-black rounded-md text-white p-1" id="closeSucessfull">Fenster Schließen</button>
+</div>
+
+<!--Meldung wenn code error-->
+<div id="unsucessfull" class="p-2 font-bold text-center rounded-md hidden bg-lightgray text-black border-4 border-yellow"><p> Es gab einen Fehler beim Senden Ihrer Daten. Kontrollieren sie ob mit dieser E-Mail bereits ein Bild hochgeladen wurde, die Bilddatei im richtigen Format ist und nicht die maximale größe überschreitet.</p>
+  <button class="bg-black rounded-md text-white p-1" id="closeUnsucessfull">Fehlermeldung Schließen</button>
+</div>
+
+    </div>
+  </div>
+
+</div>
+
+<!--Modal Fenster Alles Ausfüllen-->
+<div id="modalSubmit" class="fixed z-10 inset-0 overflow-y-auto hidden">
+  <div
+    class="flex items-center justify-center min-h-screen px-4 text-center"
+  >
+    <div class="fixed inset-0 bg-black opacity-50"></div>
+    <div
+      class="z-20 max-w-xl mx-auto bg-white rounded-lg text-center overflow-hidden shadow-2xl transform transition-transform sm:w-full"
+    >
+      <div class="px-4 py-2 flex justify-center flex-col">
+        <p class="text-lg"><b>Ein Fehler ist aufgetreten</b></p>
+        <p class="underline uppercase"> Bitte füllen Sie alle Felder aus und stimmen Sie allen Bedingungen zu !</p>
+      </div>
+      <div class="px-4 py-2">
+        <button
+          id="closeModalSubmit"
+          class="px-2 py-1 underlinehover"
+        >
+          Fehlermeldung SCHLIEßEN
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--#########-->
+<!--Modal Fenster Sucessfull-->
+      </section>
+     
+    <!--###########-->
+
+    <!--Footer-->
+    <footer class="text-white" id="navigation-contact">
+      <div class="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-4 justify-between w-[95%] ml-[2.5%]">
+        <div class="flex flex-col gap-4 border-4 border-yellow p-2 items-center bg-gray">
+          <div class="flex gap-2">
+            <img class="w-24 h-24" src="/assets/Logo/Raiffeisen Logo Gelb.png" alt="Raiffeisen Logo">
+            <h3 class="font-extrabold">Social Media <br>Raiffeisen <br>Kärnten</h3>
+
+     </div>
+     <div class="flex gap-4">
+<a href="https://www.facebook.com/RaiffeisenLandesbankKaernten/" target="_blank" class="socialmediaborder"><img src="/assets/sonstiges Thomas/Facebookicon.png" alt="Link Facebook" title="Facebook"></a>
+<a class="pt-3 socialmediaborder" href="https://www.youtube.com/channel/UCQEna0M5FhvZZhimwUhEs5A" target="_blank"><img src="/assets/sonstiges Thomas/yt-icon.png" alt="Link Youtube" title="Youtube"></a>
+<a href="https://at.linkedin.com/company/raiffeisen-landesbank-k%C3%A4rnten" target="_blank"><img  src="/assets/sonstiges Thomas/linkedin-logo.png" alt="Link linkedin" title="Linked In" class="socialmediaborder"></a>
+     </div>
+  </div>
+<div class="flex flex-col sm:flex-row justify-center gap-5 border-4 border-yellow p-2 bg-gray">
+  <div class="flex flex-col gap-2 items-center text-center" >
+  <h3 class="font-extrabold">Kontakt</h3>
+  <div class="flex"><img class="w-7 h-7" src="/assets/sonstiges Thomas/standort.jpg" alt="Standort"><span>Raiffeisen Landesbank Kärnten</span></div>
+  <span>Raiffeisenplatz 1</span>
+  <span>9020 Klagenfurt am Wörthersee</span>
+  <a class="borderbottom" href="tel:+43463299300"><img src="/assets/sonstiges Thomas/telefon.png" alt="++43463299300"> +43 4632 993 00</a>
+  <a class="borderbottom" href="mailto:info@rbgk.raiffeisen.at"><img src="/assets/sonstiges Thomas/email.png" alt="E-Mail:info@rbgk.raiffeisen.at"> info@rbgk.raiffeisen.at</a>
+</div>
+<div>
+  <iframe title="Raiffeisen Kärtnen Standort" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d701421.9221692953!2d13.092433678124996!3d46.62815719999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47707362177f0f07%3A0x1a011d052945b874!2sRaiffeisen%20Landesbank%20K%C3%A4rnten!5e0!3m2!1sde!2sat!4v1685986117167!5m2!1sde!2sat" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</div>
+<div class="flex flex-col gap-1 p-2 border-4 border-yellow text-center items-center bg-gray">
+<h3 class="font-extrabold text-white">Info / Bedingungen</h3>
+<a class="border-b bubble-button" href="/footer_links/datenschutz.html">Datenschutz</a>
+<a class="border-b bubble-button" href="/footer_links/teilnahmebedingungen.html">Teilnahmebedingungen</a>
+<a class="border-b bubble-button" href="https://www.raiffeisen.at/ktn/rlb/de/meine-bank/raiffeisen-bankengruppe/impressum.html">Impressum</a>
+<a class="border-b bubble-button" href="https://www.raiffeisen.at/ktn/rlb/de/meine-bank/raiffeisen-bankengruppe/agb.html">AGB</a>
+<a class="border-b bubble-button" href="https://www.raiffeisen.at/ktn/rlb/de/meine-bank/raiffeisen-bankengruppe/disclaimer.html">Disclaimer</a>
+<a class="border-b bubble-button" href="/footer_links/cookies_präferenzen.html">Cookie-Präferenzen</a>
+</div>
+
+</div>
+<p class="text-center py-5 text-black"> © 2023 Raiffeisen Landesbank Kärnten</p>
+    </footer>
+    <!--Cookie Modalfenster-->
+    <div id="modal" class="hidden fixed z-10 inset-0 overflow-y-auto sm:inset-auto sm:bottom-0 sm:left-0"
+      aria-labelledby="modalTitle" role="dialog" aria-modal="true">
+      <div
+        class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0 sm:items-start sm:justify-start">
+        <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" aria-hidden="true"></div>
+
+        <div
+          class="bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:align-start sm:m-4 sm:max-w-lg sm:w-full">
+          <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+            <h3 class="text-lg leading-6 font-medium" id="modalTitle">
+              Cookies
+            </h3>
+            <div class="mt-2 flex flex-col">
+              <p class="text-sm">
+                Wir verwenden nur funktionelle Cookies, um unsere Website und unseren Service zu optimieren.
+              </p>
+              <a class="underline font-bold" href="/footer_links/datenschutz.html">Datenschutz</a>
+              <a class="underline font-bold" href="/footer_links/cookies_präferenzen.html">Cookie-Präferenzen</a>
+            </div>
+          </div>
+          <div class="bg-yellow px-4 py-3 sm:flex sm:flex-row-reverse">
+            <button id="closeButton" type="button"
+              class="mt-3 w-full inline-flex justify-center rounded-md border shadow-sm px-4 py-2 sm:w-auto">
+              Cookies akzeptieren
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--##########-->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="gallery.js"></script>
+    <script src="script.js"></script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="translate.js"></script>
+</body>
+
+</html>

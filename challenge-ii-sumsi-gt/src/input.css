@@ -1,0 +1,328 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: defaultFont;
+  src: url(../assets/fonts/SWZ721LE.TTF);
+}
+
+body {
+  font-family: defaultFont;
+  font-size: large;
+}
+/*Thomas*/
+html {
+  text-size-adjust: 100%;
+}
+
+/*hamburger menu mit normalen css/mit tailwind schwieirg/teilweise nicht möglich */
+.menu-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn__burger {
+  width: 50px;
+  height: 6px;
+  background: rgb(0, 0, 0);
+  border-radius: 5px;
+  box-shadow: 0 2px 5px yellow;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn__burger::before,
+.menu-btn__burger::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 6px;
+  background: black;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px yellow;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn__burger::before {
+  transform: translateY(-16px);
+}
+
+.menu-btn__burger::after {
+  transform: translateY(16px);
+}
+
+.menu-btn.open .menu-btn__burger {
+  transform: translateX(-50px);
+  background: transparent;
+  box-shadow: none;
+}
+
+.menu-btn.open .menu-btn__burger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menu-btn.open .menu-btn__burger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+}
+
+/*verzögertes einblenden mit css/mit tailwind nicht möglich*/
+#nav-links li {
+  opacity: 0;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+#nav-links:not(.hidden) li {
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+#nav-links:not(.hidden) li:nth-child(1) {
+  animation-delay: 0.1s;
+}
+#nav-links:not(.hidden) li:nth-child(2) {
+  animation-delay: 0.2s;
+}
+#nav-links:not(.hidden) li:nth-child(3) {
+  animation-delay: 0.3s;
+}
+#nav-links:not(.hidden) li:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+/*hovereffekt mit normalen css/mit taiwind nicht möglich*/
+.bubble-button {
+  position: relative;
+  display: inline-block;
+  height: 35px;
+  width: 90%;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  font-size: 1.25em;
+  overflow: hidden;
+  outline: none;
+  box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.4);
+  transition: all 0.5s ease-in-out;
+}
+
+.bubble-button:hover {
+  background-color: #ede211;
+  box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.2);
+  color: black;
+}
+
+.bubble-button:after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: rgba(250, 249, 249, 0.5);
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  left: 50%;
+  top: 50%;
+  z-index: 0;
+  margin-top: -75px;
+  margin-left: -75px;
+  pointer-events: none;
+  transform: scale(0, 0);
+  opacity: 1;
+  transition: all 1s ease;
+}
+
+.bubble-button:hover:after {
+  transform: scale(0.7, 0.7);
+  opacity: 0;
+}
+
+.bubble-button:before {
+  font-size: 32px;
+  line-height: 80px;
+  position: relative;
+  color: #100f0f;
+  z-index: -1;
+}
+
+/*-----Sumsie Swap mit normalen css/mit tailwind schwierig ----------*/
+
+.flip-card {
+  width: 200px;
+  height: 200px;
+  perspective: 1000px;
+}
+
+@media (min-width: 640px) {
+  .flip-card {
+    width: 350px;
+    height: 300px;
+  }
+}
+@media (min-width: 768px) {
+  .flip-card {
+    width: 400px;
+    height: 325px;
+  }
+}
+@media (min-width: 1024px) {
+  .flip-card {
+    width: 500px;
+    height: 400px;
+  }
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+/*underlinehovereffect header*/
+.underlinehover {
+  @apply inline-block relative pb-1;
+}
+
+.underlinehover:before {
+  content: "";
+  @apply absolute left-0 bottom-0 w-0 h-[5px] bg-gradient-to-r from-yellow to-black ease-out duration-500;
+}
+
+.underlinehover:hover:before {
+  @apply w-full;
+}
+/*Schrifthover normales Css, mit Tailwind schwierig/teilweise nicht möglich*/
+.color-change-text {
+  position: relative;
+  color: black;
+  background-color: white;
+  overflow: hidden;
+  letter-spacing: 0.5px;
+  text-align: center;
+  padding: 3px;
+}
+.color-change-text:hover:after {
+  width: 100%;
+}
+
+.color-change-text:after {
+  content: attr(data-content);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  color: yellow;
+  background-color: rgb(0, 0, 0);
+  overflow: hidden;
+  transition: width 0.5s linear;
+  white-space: nowrap;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+/*inputfeld*/
+.forminput {
+  @apply p-2 rounded-xl bg-white text-black shadow-md border-yellow border-2 outline-none;
+}
+/*border bottom*/
+.borderbottom {
+  @apply border-b-4 hover:text-yellow hover:border-yellow flex gap-2;
+}
+.socialmediaborder {
+  @apply border-4 border-gray hover:border-yellow;
+}
+
+/*für screenreader*/
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+/*###################Thomas Ende*/
+
+/*Gabriel*/
+/* General stylings */
+h1 {
+  @apply text-2xl md:text-4xl lg:text-5xl p-1 sm:p-2;
+}
+h2 {
+  @apply text-xl md:text-2xl lg:text-4xl;
+}
+h3 {
+  @apply text-lg md:text-xl lg:text-3xl;
+}
+/* ########################################### */
+
+/* Text-Section */
+.card {
+  @apply flex flex-col items-start sm:w-[80%] md:w-[85%] p-2 gap-2;
+}
+.card span {
+  @apply p-1 text-white border-b mb-2 text-lg font-semibold;
+}
+.card h3 {
+  @apply text-white text-center font-extrabold;
+}
+.card p {
+  @apply text-white text-lg font-medium;
+}
+.card-img-container {
+  @apply flex justify-center items-center m-auto w-[60%] lg:w-[15%];
+}
+
+.card-container {
+  @apply flex flex-col sm:flex-row p-8;
+}
+.reverse-class:nth-child(even) .card-img-container {
+  @apply sm:order-first;
+}
+.reverse-class:nth-child(even) .card {
+  @apply sm:items-end;
+}
+.reverse-class:nth-child(even) .card p {
+  @apply sm:text-end;
+}
+.card-line {
+  @apply bg-bg_white h-[4px];
+}
+
+/* ############################ */
+
+/* Gallery */
+
+.img-container {
+  @apply w-full h-full relative cursor-pointer shadow-xl transition-colors border-white border-[6px];
+}
+.img-container img {
+  @apply w-full h-full object-cover aspect-square;
+}
+.img-container:hover {
+  @apply border-[6px] border-yellow;
+}
+.description-container {
+  @apply absolute bottom-0 left-0 w-full bg-white flex justify-between gap-4 p-1 border-t border-black transition-colors;
+}
+/* ############################ */
