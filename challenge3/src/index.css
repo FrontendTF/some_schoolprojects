@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*Thomas Feyerl*/
+.H2 {
+  @apply font-bold text-2xl sm:text-4xl lg:text-5xl p-2 text-center;
+}
+.H3 {
+  @apply font-bold sm:text-lg md:text-xl lg:text-2xl;
+}
+.blueButton {
+  @apply bg-blue-500 text-white font-bold text-base sm:text-xl rounded-full uppercase w-[150px] sm:w-[200px] mx-auto p-1 lg:hover:bg-blue-700;
+}
+.inputfield {
+  @apply outline-none border-2 rounded-lg p-1 sm:w-[450px];
+}
+.labeltext {
+  @apply flex flex-col w-full;
+}
+.formbg {
+  @apply bg-gray-300 shadow-lg w-11/12 mx-auto my-5 sm:my-10 md:my-16 lg:my-24 rounded-xl p-5 md:py-10 sm:w-[589px] md:w-[700px] border-4 border-blue-400;
+}
+.forminput {
+  @apply w-11/12 mx-auto flex flex-col justify-center gap-3 sm:gap-5 sm:items-center;
+}
+.errortext {
+  @apply font-bold text-center bg-white rounded-lg;
+}
+.Datepicker {
+  @apply outline-none border-2 w-[230px] md:w-[300px] lg:w-[400px] m-auto text-center flex justify-center;
+}
+.Datepickerdiv {
+  @apply flex flex-col w-[100%] gap-3 md:flex-row justify-center;
+}
+/*Thomas Ziergoi*/
+
+/* Styles for Navigation*/
+.navigationLink {
+  @apply text-white uppercase font-semibold text-xl hover:underline;
+}
+
+/* Styles for Profil*/
+.spanProfil {
+  @apply bg-white border-white rounded-lg px-3 py-1 font-semibold;
+}
+
+.profil-info {
+  @apply flex flex-col gap-2 items-center;
+}
+.gridItem {
+  width: 60px;
+  height: 60px;
+}
+
+@media (min-width: 576px) {
+  .gridItem {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (min-width: 960px) {
+  .gridItem {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .gridItem {
+    width: 120px;
+    height: 120px;
+  }
+}
+.gridItem {
+  width: 60px;
+  height: 60px;
+}
+
+@media (min-width: 576px) {
+  .gridItem {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (min-width: 960px) {
+  .gridItem {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .gridItem {
+    width: 120px;
+    height: 120px;
+  }
+}
